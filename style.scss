@@ -20,8 +20,6 @@
       text-align: center;
     }
     .mainDesc {
-      // display: grid;
-      // grid-template-rows: 1fr 1fr;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -82,29 +80,33 @@
         font-size: 1.8em;
       }
     }
-    // .introButton {
-    //   .learnmore {
-    //     width: 35%;
-    //     padding: 20px;
-    //     border: 1px solid #000;
-    //     border-radius: 50px;
-    //     text-align: center;
-    //     cursor: pointer;
-    //     :hover {
-    //       background: #000;
-    //       color: #fff;
-    //     }
-    //   }
-    //   dialog {
-    //     border: none;
-    //     text-align: center;
-    //     border-radius: 20px;
-    //     padding: 20px 50px 10px 50px;
-    //     ::backdrop {
-    //       background-color: rgba(0, 0, 0, 0.8);
-    //     }
-    //   }
-    // }
+    .introButton {
+      .learnmore {
+        padding: 20px;
+        border: 1px solid #000;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 100px;
+        cursor: pointer;
+      }
+      dialog {
+        height: 50vh;
+        background-color: rbga(0, 0, 0, 1);
+        border: none;
+        text-align: center;
+        border-radius: 20px;
+        margin: 200px;
+        font-size: 1.1em;
+        padding: 80px;
+        button {
+          margin-top: 25px;
+          padding: 15px;
+          border: none;
+          border-radius: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -394,6 +396,9 @@ footer {
       img {
         height: 30vh;
       }
+    }
+    .introButton {
+      display: none;
     }
   }
   .symbol {
